@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar class="ios hydrated">
+    <ion-title class="ios title-ios hydrated">Calificaciones Estudiantes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="bookingForm" (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input formControlName="name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Calificación 1</ion-label>
+        <ion-input formControlName="calif1" type="number" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Calificación 2</ion-label>
+        <ion-input formControlName="calif2" type="number" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Calificación 3</ion-label>
+        <ion-input formControlName="calif3" type="number" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Calificación 4</ion-label>
+        <ion-input formControlName="calif4" type="number" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Calificación 5</ion-label>
+        <ion-input formControlName="calif5" type="number" required>
+        </ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Agregar calificaciones Estudiante</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>
